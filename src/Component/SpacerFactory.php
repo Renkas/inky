@@ -142,7 +142,7 @@ class SpacerFactory extends AbstractComponentFactory
             $tr = $this->tr();
             $td = $this->td();
 
-            $td->setAttribute('height', sprintf('%dpx', $size));
+            $td->setAttribute('height', sprintf('%d', $size));
             $td->setAttribute('style', sprintf('font-size:%dpx;line-height:%dpx;', $size, $size));
             $td->addChild(new TextNode('&#xA0;'));
 
